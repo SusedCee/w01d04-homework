@@ -25,27 +25,73 @@ console.log("HW");
 //false if not. Make sure your function will give the correct answer for words with 
 //capital letters.
 
-const checkPalindrome = (string) => {   //
-//	const res = str.toLowerCase();       //turn the string into lower case
-	const word = string;
-	const split = string.split("");
-	const reverse = split.reverse("");
-	const join = reverse.join();
-		if (word === join) {
-			return true;
-			} else {
-				return false;
-			}
-		}
+// const checkPalindrome = (string) => {   //
+// //	const res = str.toLowerCase();       //turn the string into lower case
+// 	const word = string;
+// 	const split = string.split("");
+// 	const reverse = split.reverse("");
+// 	const join = reverse.join();
+// 		if (word === join) {
+// 			return true;
+// 			} else {
+// 				return false;
+// 			}
+// 		}
+
+// console.log(checkPalindrome("radar"));
+// console.log(checkPalindrome("borscht"));
+
+
+
+//DIGIT SUM
+//Write a function sumDigits that accepts a number and returns the sum of its digits.
+// function sumDigits(num) {
+// 	var numString = num.toString();
+// 	var starting = 0;
+// 	var sum = 0;
+// 	if (num < 0){
+// 		sum -=Number(numString[1]);
+// 		starting += 2; 
+// 	}
+// 	for (var i = string; i < numString.length; i++) {
+// 		sum += Number(numString[i]);
+// 	}
+// 	return sum;
+// }
+// console.log(sumDigits(42)); 
 
 
 
 
-console.log(checkPalindrome("radar"));
-console.log(checkPalindrome("borscht"));
+// 	if(Number.isInteger(num) === false){
+// 		return sum;
+// 	}
+// 	var str = num.toString();
+// 	for(i = 0; i <= str.length - 1; i++){
+// 		sum += +str[i];
+// 	}
+// 	return sum;
+// }
+
+// console.log(sumDigits(42)); // should equal 6
 
 
 
+
+//PYTHAGORAS
+// Write a function calculateSide that takes two arguments: sideA and sideB, and returns 
+// the solution for sideC using the Pythagorean theorem.
+
+// hint: discover the Pythagorean Theorem on a website called google.com
+// hint: checkout the Math methods in javascript
+
+// function calculateSide(sideA, sideB){
+//   return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+// }
+
+
+
+// console.log(calculateSide(8, 6)); // should equal 10
 
 
 

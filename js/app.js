@@ -26,7 +26,6 @@ console.log("HW");
 //capital letters.
 
 // const checkPalindrome = (string) => {   //
-// //	const res = str.toLowerCase();       //turn the string into lower case
 // 	const word = string;
 // 	const split = string.split("");
 // 	const reverse = split.reverse("");
@@ -45,37 +44,17 @@ console.log("HW");
 
 //DIGIT SUM
 //Write a function sumDigits that accepts a number and returns the sum of its digits.
-// function sumDigits(num) {
-// 	var numString = num.toString();
-// 	var starting = 0;
-// 	var sum = 0;
-// 	if (num < 0){
-// 		sum -=Number(numString[1]);
-// 		starting += 2; 
-// 	}
-// 	for (var i = string; i < numString.length; i++) {
-// 		sum += Number(numString[i]);
-// 	}
-// 	return sum;
-// }
-// console.log(sumDigits(42)); 
 
+function sumDigits(stuff) {
+	const split = (""+stuff).split("");
+	const num = 0;
+	for (i = 0; i <split.length; i++) {
+		num += Math.max(split[i])
+	}
+	return num;
+}
 
-
-
-// 	if(Number.isInteger(num) === false){
-// 		return sum;
-// 	}
-// 	var str = num.toString();
-// 	for(i = 0; i <= str.length - 1; i++){
-// 		sum += +str[i];
-// 	}
-// 	return sum;
-// }
-
-// console.log(sumDigits(42)); // should equal 6
-
-
+console.log(sumDigits(567));
 
 
 //PYTHAGORAS
@@ -122,7 +101,7 @@ console.log("HW");
 
 //  function checkPrime (number){
 //  	for(var i = 2; i < number; i++) {
-//  		if(number % i ===0) {
+//  		if(number % i === 0) {
 //  			return false;
 //  		}
 //  	}
@@ -141,32 +120,32 @@ console.log("HW");
 // This function can call on the previous checkPrime function.
 
 
-function printPrimes (num){
+// function printPrimes (num){
 
-	var primeFactors = [];
-	while (num % 2 === 0) {
-		primeFactors.push(2);
-		num =num / 2;
-	}
+// 	var primeFactors = [];
+// 	while (num % 2 === 0) {
+// 		primeFactors.push(2);
+// 		num =num / 2;
+// 	}
 
-	var sqrtNum = Math.sqrt(num);
-	for (var i = 3; i <= sqrtNum; i++) {
-		while (num % i ===0) {
-			primeFactors.push(i);
-			num = num / i;
-		}
-	}
+// 	var sqrtNum = Math.sqrt(num);
+// 	for (var i = 3; i <= sqrtNum; i++) {
+// 		while (num % i ===0) {
+// 			primeFactors.push(i);
+// 			num = num / i;
+// 		}
+// 	}
 
-	if (num > 2) {
-		primeFactors.push(num);
-	}
-	return primeFactors;
-}
+// 	if (num > 2) {
+// 		primeFactors.push(num);
+// 	}
+// 	return primeFactors;
+// }
 
 
-console.log(printPrimes(7));
-console.log(printPrimes(5));
-console.log(printPrimes(12));
+// console.log(printPrimes(7));
+// console.log(printPrimes(5));
+// console.log(printPrimes(12));
 
 
 

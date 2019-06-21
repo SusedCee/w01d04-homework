@@ -99,23 +99,74 @@ console.log("HW");
 //Write a function sumArray that takes an array as an argument. The array should 
 //contain numbers. The function should return the sum of the numbers in the array.
 
-function  sumArray (amount){
-	var total = 0;
-	for (i = 0; i < amount.length; ++i) {
-		total += amount[i];
-	} 
-	return total;
+// function  sumArray (amount){
+// 	var total = 0;
+// 	for (i = 0; i < amount.length; ++i) {
+// 		total += amount[i];
+// 	} 
+// 	return total;
 
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));  //=> 21
+
+
+
+
+
+//PRIME NUMBERS
+//Step 1
+//Write a function called checkPrime that will test whether a number is Prime. 
+//The function will return true (Boolean) if Prime, false if not. Hint: Check 
+//every number up to the square root. To do this, try a for loop.
+
+//  function checkPrime (number){
+//  	for(var i = 2; i < number; i++) {
+//  		if(number % i ===0) {
+//  			return false;
+//  		}
+//  	}
+//    return number >1;
+// }
+
+// console.log(checkPrime(17));
+// console.log(checkPrime(6));
+// console.log(checkPrime(23));
+
+
+//Step 2
+// Write another function called printPrimes that will print (console log) all the
+// Primes up to an arbitrary limit. For example, if you invoke your function with 
+// printPrimes(97), it will print all the Prime numbers up to and including 97. 
+// This function can call on the previous checkPrime function.
+
+
+function printPrimes (num){
+
+	var primeFactors = [];
+	while (num % 2 === 0) {
+		primeFactors.push(2);
+		num =num / 2;
+	}
+
+	var sqrtNum = Math.sqrt(num);
+	for (var i = 3; i <= sqrtNum; i++) {
+		while (num % i ===0) {
+			primeFactors.push(i);
+			num = num / i;
+		}
+	}
+
+	if (num > 2) {
+		primeFactors.push(num);
+	}
+	return primeFactors;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));  //=> 21
 
-
-
-
-
-
-
+console.log(printPrimes(7));
+console.log(printPrimes(5));
+console.log(printPrimes(12));
 
 
 

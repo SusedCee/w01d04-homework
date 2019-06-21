@@ -95,8 +95,20 @@ console.log("HW");
 
 
 
+//SUM ARRAY
+//Write a function sumArray that takes an array as an argument. The array should 
+//contain numbers. The function should return the sum of the numbers in the array.
 
+function  sumArray (amount){
+	var total = 0;
+	for (i = 0; i < amount.length; ++i) {
+		total += amount[i];
+	} 
+	return total;
 
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));  //=> 21
 
 
 
